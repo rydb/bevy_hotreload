@@ -1,0 +1,15 @@
+[package]
+name = "bevy_hotreload"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "2"
+members = ["lib"]
+
+[dependencies]
+env_logger = "*"
+hot-lib-reloader = "0.7"
+lib = { path = "lib" }
+notify = "6.1"
+log = "*"
